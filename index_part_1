@@ -1,0 +1,27 @@
+<html style="background-color: black; cursor: none;overflow:hidden;margin: 0px 0px;">
+<head>
+<!--<link href="style.css" rel="stylesheet" type="text/css"> -->
+<!-- include jQuery library -->
+<script type="text/javascript" src="./jquery.min.js"></script>
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="./jquery.cycle.all.latest.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+		fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		speed: 4000,
+		random: false,
+		timeout: 12000
+	});
+});
+</script>
+<script type="text/javascript">
+window.onload=function(){
+	window.focus();
+};
+</script>
+</head>
+<body style="margin: 0px 0px;">
+<div class="slideshow" style="margin: 0px 0px; width:100%" >
+		<img src="space1.jpg" style="width: 0%"/>
+		
