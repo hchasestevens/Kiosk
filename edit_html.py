@@ -14,10 +14,10 @@ images = [os.getcwd() + '/' + image for image in filter(lambda x:'.jpeg' in x or
 os.chdir('/home/pi/Desktop/web')
 if not failsafe:
 	try:
-		f = open('~/Kiosk/index_part_1','r')
+		f = open('/home/pi/Kiosk/index_part_1','r')
 		prefix = f.read()
 		f.close()
-		f = open('~/Kiosk/index_part_2','r')
+		f = open('/home/pi/Kiosk/index_part_2','r')
 		suffix = f.read()
 		f.close()
 	except:
@@ -33,3 +33,7 @@ if not failsafe:
 		f.close()
 	except:
 		pass
+#testing out:
+with open('index.html','w') as f:
+	f.write("<h1>Hello world.</h1>")
+
