@@ -1,7 +1,7 @@
 cd /home/pi/Kiosk && git pull
 cd /home/pi
 cp /home/pi/Kiosk/.xsessionrc /home/pi/
-python /home/pi/Kiosk/edit_html.py
+/home/pi/Kiosk/edit_html.py
 setterm -blank 0 -powersave off -powerdown 0 &
 midori -e Fullscreen -a /home/pi/Desktop/web/index.html &
 /home/pi/Kiosk/move_pointer.py &
